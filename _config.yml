@@ -17,10 +17,11 @@ title: FROGHRAMAR
 email: froghramar@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   MEAN stack developer; Like to solve complex UIs with Angular; Code in TypeScript and JavaScript; Big fan of MongoDB, OOP and Material Design
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: froghramar
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://froghramar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  froghramar
+facebook_username: froghramar
+linkedin_username: froghramar
 
 # Build settings
 markdown: kramdown
