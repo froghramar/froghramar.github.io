@@ -16,12 +16,42 @@
         {"@context":"https://schema.org","@type":"Person","name":"Feroz Ahmmed","description":".NET developer, Azure cloud experience","mainEntityOfPage":{"@type":"WebPage","@id":"https://feroz.dev"},"url":"https://feroz.dev"}
     </script>
     <style>
+        html {
+            font-family: IBM Plex Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        }
         nav {
             display: flex;
             flex-wrap: nowrap;
         }
-        nav > div {
-            padding: 5px;
+        nav > a {
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+            transition-duration: .15s;
+        }
+        .justified {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .font-semibold {
+            font-weight: 600;
+        }
+        .page-subtitle {
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 16px;
+        }
+        .page-title {
+            font-size: 3rem;
+            line-height: 1;
+            letter-spacing: -.025em;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -36,19 +66,22 @@
 </head>
 <body>
 <div>
-    <nav>
-        <div>
+    <div class="justified">
+        <nav>
             <a href="/">Home</a>
-        </div>
-        <div>
+            <a href="/">Resume</a>
             <a href="https://froghramar.com" target="_blank">Blogs</a>
-        </div>
-    </nav>
-    <div>
-        <h1>Feroz Ahmmed</h1>
-        <h2>Freelance software engineer at <span>Toptal</span></h2>
-        <p>I am a software engineer specializing in building highly scalable web applications.</p>
+        </nav>
     </div>
+    <main class="justified">
+        <h1 class="page-title">Feroz Ahmmed</h1>
+        <h2 class="page-subtitle">Freelance software engineer at <span class="font-semibold">Toptal</span></h2>
+        <p>
+            Feroz is a software engineer with more than five years of industry experience.
+            Most of his development skills are on Microsoft stack, especially C#, .NET Core, Azure Functions, SQL Server and Azure Cosmos DB.
+            Throughout his career, Feroz has developed efficient, highly scalable, and fault-tolerant web applications.
+        </p>
+    </main>
 </div>
 </body>
 </html>
