@@ -19,6 +19,52 @@
         html {
             font-family: IBM Plex Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
         }
+        *, :after, :before {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgba(59,130,246,.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
         nav {
             display: flex;
             flex-wrap: nowrap;
@@ -26,6 +72,8 @@
             max-width: 42rem;
             margin-left: auto;
             margin-right: auto;
+            padding-bottom: 4rem;
+            padding-top: 2rem;
         }
         .nav-links {
             margin-left: -0.6rem;
@@ -53,6 +101,11 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .introduction {
+            padding-right: 2rem;
+            flex-direction: column;
+            display: flex;
+        }
         .font-semibold {
             font-weight: 600;
         }
@@ -68,6 +121,23 @@
             letter-spacing: -.025em;
             font-weight: 700;
             margin-bottom: 0.25rem;
+            margin-top: 0;
+        }
+        .profile-image-container {
+            width: 176px;
+            position: relative;
+            margin-right: auto;
+            margin-bottom: 0;
+        }
+        .profile-image-container > img {
+            height: auto;
+            display: block;
+            vertical-align: middle;
+            width: 176px;
+            aspect-ratio: auto 176 / 176;
+            border-radius: 9999px;
+            --tw-grayscale: grayscale(30%);
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -93,13 +163,20 @@
     </div>
     <main class="justified">
         <div class="padded-content">
-            <h1 class="page-title">Feroz Ahmmed</h1>
-            <h2 class="page-subtitle">Freelance software engineer at <span class="font-semibold">Toptal</span></h2>
-            <p>
-                Feroz is a software engineer with more than five years of industry experience.
-                Most of his development skills are on Microsoft stack, especially C#, .NET Core, Azure Functions, SQL Server and Azure Cosmos DB.
-                Throughout his career, Feroz has developed efficient, highly scalable, and fault-tolerant web applications.
-            </p>
+            <div style="flex-direction: row; align-items: flex-start; display: flex;">
+                <div class="introduction">
+                    <h1 class="page-title">Feroz Ahmmed</h1>
+                    <h2 class="page-subtitle">Freelance software engineer at <span class="font-semibold">Toptal</span></h2>
+                    <p>
+                        Feroz is a software engineer with more than five years of industry experience.
+                        Most of his development skills are on Microsoft stack, especially C#, .NET Core, Azure Functions, SQL Server and Azure Cosmos DB.
+                        Throughout his career, Feroz has developed efficient, highly scalable, and fault-tolerant web applications.
+                    </p>
+                </div>
+                <div class="profile-image-container">
+                    <img width="176" height="176" alt="Feroz Ahmmed" src="/logo.jpg">
+                </div>
+            </div>
         </div>
     </main>
 </div>
