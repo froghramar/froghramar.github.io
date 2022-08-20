@@ -22,8 +22,15 @@
         nav {
             display: flex;
             flex-wrap: nowrap;
+            width: 100%;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
         }
-        nav > a {
+        .nav-links {
+            margin-left: -0.6rem;
+        }
+        .nav-links > a {
             text-decoration: none;
             padding: 0.5rem 0.75rem;
             transition-property: all;
@@ -36,6 +43,15 @@
             justify-content: center;
             display: flex;
             flex-direction: column;
+        }
+        .padded-content {
+            max-width: 42rem;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
         }
         .font-semibold {
             font-weight: 600;
@@ -68,19 +84,23 @@
 <div>
     <div class="justified">
         <nav>
-            <a href="/">Home</a>
-            <a href="/">Resume</a>
-            <a href="https://froghramar.com" target="_blank">Blogs</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/">Resume</a>
+                <a href="https://froghramar.com" target="_blank">Blog</a>
+            </div>
         </nav>
     </div>
     <main class="justified">
-        <h1 class="page-title">Feroz Ahmmed</h1>
-        <h2 class="page-subtitle">Freelance software engineer at <span class="font-semibold">Toptal</span></h2>
-        <p>
-            Feroz is a software engineer with more than five years of industry experience.
-            Most of his development skills are on Microsoft stack, especially C#, .NET Core, Azure Functions, SQL Server and Azure Cosmos DB.
-            Throughout his career, Feroz has developed efficient, highly scalable, and fault-tolerant web applications.
-        </p>
+        <div class="padded-content">
+            <h1 class="page-title">Feroz Ahmmed</h1>
+            <h2 class="page-subtitle">Freelance software engineer at <span class="font-semibold">Toptal</span></h2>
+            <p>
+                Feroz is a software engineer with more than five years of industry experience.
+                Most of his development skills are on Microsoft stack, especially C#, .NET Core, Azure Functions, SQL Server and Azure Cosmos DB.
+                Throughout his career, Feroz has developed efficient, highly scalable, and fault-tolerant web applications.
+            </p>
+        </div>
     </main>
 </div>
 </body>
