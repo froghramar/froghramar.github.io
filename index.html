@@ -127,6 +127,15 @@
             margin-bottom: 0.25rem;
             margin-top: 0;
         }
+        .profile-image-block {
+            width: 176px;
+            position: relative;
+            margin-right: auto;
+            margin-bottom: 0;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
         .profile-image-container {
             width: 176px;
             position: relative;
@@ -142,6 +151,18 @@
             border-radius: 9999px;
             --tw-grayscale: grayscale(30%);
             filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+        .svg-icon { width: 16px; height: 16px; display: inline-block; fill: #828282; padding-right: 5px; vertical-align: text-top; }
+        .social-media-list li + li { padding-top: 5px; }
+        a { color: #2a7ae2; text-decoration: none; }
+        a:visited { color: #1756a9; }
+        a:hover { color: #111; text-decoration: underline; }
+        .social-media-list a:hover { text-decoration: none; }
+        .social-media-list a:hover .username { text-decoration: underline; }
+        .social-media-list { list-style: none; margin-left: 0; padding-left: 0; justify-content: center; }
+        .social-media-list > li {
+            width: 100%;
+            text-align: center;
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -179,8 +200,16 @@
                         Throughout his career, Feroz has developed efficient, highly scalable, and fault-tolerant web applications.
                     </p>
                 </div>
-                <div class="profile-image-container">
-                    <img width="176" height="176" alt="Feroz Ahmmed" src="/logo.jpg">
+                <div class="profile-image-block">
+                    <div class="profile-image-container">
+                        <img width="176" height="176" alt="Feroz Ahmmed" src="/logo.jpg">
+                    </div>
+                    <div style="width: 176px">
+                        <ul class="social-media-list">
+                            <li><a href="https://github.com/froghramar"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#github"></use></svg> <span class="username">froghramar</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/froghramar"><svg class="svg-icon"><use xlink:href="/assets/social-icons.svg#linkedin"></use></svg> <span class="username">froghramar</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
