@@ -105,6 +105,16 @@
             margin-left: auto;
             margin-right: auto;
         }
+        @media (min-width: 640px) {
+            .introduction-container {
+                flex-direction: row !important;
+            }
+        }
+        .introduction-container {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            display: flex;
+        }
         .introduction {
             padding-right: 2rem;
             flex-direction: column;
@@ -190,7 +200,7 @@
     </div>
     <main class="justified">
         <div class="padded-content">
-            <div style="flex-direction: row; align-items: flex-start; display: flex;">
+            <div class="introduction-container">
                 <div class="introduction">
                     <h1 class="page-title">Feroz Ahmmed</h1>
                     <h2 class="page-subtitle">Freelance software engineer at <span class="font-semibold">Toptal</span></h2>
