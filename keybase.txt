@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/froghramar
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://feroz.dev
+  * I am froghramar (https://keybase.io/froghramar) on keybase.
+  * I have a public key with fingerprint AC2E A69A 93D2 3445 223B  FC91 6D47 624C A3C2 6475
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01012682145a6cd2beea13fe871ff939d724cdd2ba418ef80bdc91c8a72434013a200a",
+      "fingerprint": "ac2ea69a93d23445223bfc916d47624ca3c26475",
+      "host": "keybase.io",
+      "key_id": "6d47624ca3c26475",
+      "kid": "01012682145a6cd2beea13fe871ff939d724cdd2ba418ef80bdc91c8a72434013a200a",
+      "uid": "2676171068c8235fe52e4babd61fed19",
+      "username": "froghramar"
+    },
+    "service": {
+      "hostname": "feroz.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1687367489,
+  "expire_in": 157680000,
+  "prev": "986b09aa6d417cdb7d5248842a0fbd896249733e7d948f835c906f30e05676de",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIlAnicrVJbSBVRFL1mmhqREmIiooxkYaJz5nFm5iKRoZX2kYF9JNX1zJwzOqh3
+rnNHSy9SICW3pAgTzSgUX2iIBhX9GBoSiK+yFP0o8qOUEiojECrpjORfn52fzVms
+tfbeiz22K9QVFVIY2H+wNnjzTcjEaEuVCzdlZgcY1cQ1jDvAlJHNQsox8dueMgMz
+boYFLOCgzAFBRFDDnEoIArxOZAnousIrWOIEDVMcCUAmusyqWFOAJiOK8wILeMSx
+LGLSGd3wlhDLZxlem9oijSMIKkjhMccLgshxvKpTIcSCBKkj4jUOCpJIhaWm31HQ
+4VTkJxmGSTH68WyO9w/+f567atOOgxIEEmChrMkcL+pE5IigIhVDoBMMFIfoJ5YX
+VRDK1i2zpNRCFchi6tIZilcbGnGidXbZ4hDLrM3ApJpKfZZpm5pZTuFS2/b53Y7M
+rvE5vAtE9fx18KiGF9MYqaKaWH7D9DJuQJmabTiWAMoSDyVBVtIZctFnWMRjOAxR
+gjJLn9OHtnMzigxVVkGIhgckDasSFjlBlgUOsbqKZYUGqkg8TySsCLIu86KmsFDn
+WcKKNAZMGGenSq9JvWkrG5VQT79R4kV2lUWYuucjZ7e7QqJc4WHbnPtyRUVGb13d
+joUI18ytio7x+Ji1yYhHYfmfT0yNDt5rzq5PSetLiSuaqs09jaSHRX2nfkd0Tf9c
+vNw91FgQ+Ar2wlam91uiZ74w2LXz8dCnruSV6Pt1r28EEzoeRE0vVw4mJU5e/ZIg
+POVnL23saU02EoNxT47Vp19bzglkDr6Ek3XdWb1zB74HxTk983q+kvojJGZx97la
+djVvtn1ZOa6PD8Pzv7LcLfMpHbEfU3t7Co7UJCHljBFuxnc2N800thXHHmow+w+H
+NZxc4o7eXZ98ldE23jcxMNIf2r78doNNeJe39mxpNa7xTkPPQnnEyvTqi4GxheHc
+28XtI1fWNfA+rSjnQ2Tnvnmm6g8SwD8Y
+=PxK7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/froghramar
+
+==================================================================
