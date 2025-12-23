@@ -14,7 +14,7 @@ function fetchGitHubRepo(owner, repo) {
       method: 'GET',
       headers: {
         'User-Agent': 'GitHub-Pages-Builder',
-        'Accept': 'application/vnd.github.v3+json'
+        'Accept': 'application/vnd.github.mercy-preview+json'
       }
     };
 
@@ -45,6 +45,17 @@ function fetchGitHubRepo(owner, repo) {
   });
 }
 
+// Generate HTML for tags
+function generateTagsHTML(tags) {
+  if (!tags || tags.length === 0) {
+    return '';
+  }
+  
+  return tags.map(tag => 
+    `<span style="display: inline-block; background-color: #f1f1f1; color: #666; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-right: 0.5rem; margin-bottom: 0.5rem;">${escapeHtml(tag)}</span>`
+  ).join('');
+}
+
 // Generate HTML for a single project item using template
 function generateProjectItemHTML(project, itemTemplate) {
   const description = project.description || 'No description available';
@@ -58,6 +69,8 @@ function generateProjectItemHTML(project, itemTemplate) {
     day: 'numeric' 
   });
   const languageColor = getLanguageColor(language);
+  const tags = project.topics || [];
+  const tagsHTML = generateTagsHTML(tags);
 
   return itemTemplate
     .replace(/\{\{PROJECT_URL\}\}/g, project.html_url)
@@ -67,7 +80,8 @@ function generateProjectItemHTML(project, itemTemplate) {
     .replace(/\{\{LANGUAGE_COLOR\}\}/g, languageColor)
     .replace(/\{\{STARS\}\}/g, stars.toString())
     .replace(/\{\{FORKS\}\}/g, forks.toString())
-    .replace(/\{\{UPDATED_DATE\}\}/g, updated);
+    .replace(/\{\{UPDATED_DATE\}\}/g, updated)
+    .replace(/\{\{PROJECT_TAGS\}\}/g, tagsHTML);
 }
 
 // Escape HTML to prevent XSS
